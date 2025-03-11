@@ -144,7 +144,7 @@ You should code your implementations *only* at the locations in the template cod
 This is a great way to test that you understand the submission instructions correctly, and how to get feedback from our hidden test-cases as many times as you want. Here are the steps:
 
 * Please tag your solution with `test-submission`. If you are not familiar with tags, please check out [tag hints](#git-hints-on-tags)
-* We are going to run your code on our server. You can check your result from this [link](https://comp90054-2025s1.github.io/) after a few minutes. This can test your code for part 1 and part2.
+* We are going to run your code on our server. You can check your result from this [link](https://comp90054-2025s1.github.io/) after a few minutes. This can test your code for part 1, part 2 and part 3.
 
 #### Part 1 (2 marks)
 
@@ -209,7 +209,7 @@ A key advantage of LRTA* is that it can operate with limited computational resou
 ![Algorithm 1](img/high-level.png)
 
 
-Implement the **LRTA\* algorithm** discussed above by inserting your code into the template indicated by comment ```*** YOUR CODE HERE FOR TASK 2 ***```, you can view the location at this link: [search.py#L227](search.py#L227). 
+Implement the **LRTA\* algorithm** discussed above by inserting your code into the template indicated by comment ```*** YOUR CODE HERE FOR TASK 2 ***```, you can view the location at this link: [search.py#L155](search.py#L155). 
 
 There are two components to implement:
  - `lrtaStarTrial`: this performs a single trial, and returns the path found.
