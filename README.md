@@ -223,7 +223,12 @@ python autograder.py --test-directory=test_cases_assignment1 --q part2
 ```
 
 >[!IMPORTANT]
-> Following the pseudocode literally may result in higher numbers of node expansions than the solutions. In particular, you may see every node expanded twice. If you do not perfectly match the node expansions, but have good reason to believe your algorithm is correct, you can discuss this in your self-evaluation.
+> Following the pseudocode literally may result in failing the test cases for two reasons:
+> 1. You have higher numbers of node expansions than the solutions. In particular, you may see every node expanded twice. 
+> 2. The test cases assume that ties are broken in the order that nodes are generated, not randomly. 
+> 
+> If you do not perfectly match the node expansions, but have good reason to believe your algorithm is correct, you can discuss this in your self-evaluation.
+
 
 You can visualize the path of your agent by using the following command:
 ```bash
@@ -275,7 +280,7 @@ python pacman.py -l tinyCorners -p SearchAgent -a fn=lrtak,prob=FoodSearchProble
 ```
 
 >[!IMPORTANT]
-> As in the prior question, the number of node expansions is sentitive to implementation details in your algorithms. Try to eliminate duplicate expansions, but justifiable deviations from the test cases are OK, and should be discussed in your self-evaluation.
+> As in the prior question, the test cases are sentitive to implementation details in your algorithms. Try to eliminate duplicate expansions and match the tie-breaking behaviour, but justifiable deviations from the test cases are OK, and should be discussed in your self-evaluation.
 
 
 ### Self Evaluation Task (3 Marks)
