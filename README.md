@@ -3,7 +3,7 @@
 You must read fully and carefully the assignment specification and instructions detailed in this file. You are NOT to modify this file in any way.
 
 * **Course:** [COMP90054 AI Planning for Autonomy](https://handbook.unimelb.edu.au/subjects/comp90054) @ Semester 1, 2025
-* **Instructor:** Associate Professor Joseph West and Dr Sarita Rosenstock
+* **Instructors:** Associate Professor Joseph West and Dr Sarita Rosenstock
 > [!IMPORTANT]  
 > **Please note that this is a 2-stage assignment, so we have 2 deadlines:**
 > * **Code Deadline:** Monday 24th March, 2025 @ 6:00pm 
@@ -68,7 +68,7 @@ The objective is to reflect on your own learning, and take more risks, as you ca
 
 
 #### Collaboration
-Assignment 1 can be completed individually or in pairs. We encourage pairs to work together to learn from each other; not to simple split the tasks for efficiency. But we will not monitor this – it is your responsibility. You can submit different solutions, we just want to encourage collaboration.
+Assignment 1 can be completed individually or in pairs. We encourage pairs to work together to learn from each other; not to simply split the tasks for efficiency. But we will not monitor this – it is your responsibility. You can submit different solutions, we just want to encourage collaboration.
 
 <!-- Each submission will contain an individual short self-reflection. -->
 For students who work in pairs, you must still submit an individual self evaluation. In addition, you can either submit the same coding solution (both students still need to submit in their own repo using the appropriate tag), or submit a different coding solution. 
@@ -119,7 +119,7 @@ You **must build and submit your solution** using the sample code we provide you
 
 * You can set up your local environment:
     * You can install Python 3.8 from the [official site](https://peps.python.org/pep-0569/), or set up a [Conda environment](https://www.freecodecamp.org/news/why-you-need-python-environments-and-how-to-manage-them-with-conda-85f155f4353c/) or an environment with [PIP+virtualenv](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/26/python-virtual-env/). Please check [Conda Run](#conda-run) to set up the conda environment.
-    * You need to install additional package (func_timeout) using:  `pip3 install func_timeout`
+    * You need to install an additional package (func_timeout) using: `pip3 install func_timeout`
 
 * Alternatively, you can use docker:
     * You need to install docker from the [official site](https://docs.docker.com/get-docker/)
@@ -137,7 +137,7 @@ To familiarise yourself with basic search algorithms and the Pacman environment,
 You should code your implementations *only* at the locations in the template code indicated by ```***YOUR CODE HERE***``` in files [search.py](search.py), please do not change code at any other locations or in any other files.
 
 > [!TIP]
-> You can use the `autograder` file locally to get feedback about your progress. The test cases are included in the test_cases subfolder. You can create your own tests too! Note that the autograder does not necessarily reflect your grade. We will also host extra hidden test_cases_assignment1 in our online autograder that we will release once you submit your solution. You will then have time to reflect on your learning through the self-evaluation and the new hidden cases. 
+> You can use the `autograder` file locally to get feedback about your progress. The test cases are included in the test_cases subfolder. You can create your own tests too! Note that the autograder does not necessarily reflect your grade. We will also host an extra hidden set of test cases in a folder called test_cases_assignment1 in our online autograder that we will release after you have submitted your solution. You will then have time to reflect on your learning through the self-evaluation and the new hidden cases. 
 #### Part 0 (0 mark, but critical)
 
 
@@ -167,7 +167,7 @@ python pacman.py -l mediumMaze -p SearchAgent -a fn=astar,prob=FoodSearchProblem
 >[!IMPORTANT] 
 > Please do not change the arguments used above, unless you want to test a different functionality :wink:. You can explore other options via ``python pacman.py -h``. 
 
-We have a local autograder to test your code locally ([Local Autograder](#local-autograder)).
+We have provided a local autograder to test your code locally ([Local Autograder](#local-autograder)).
 
 For Part 1, the `autograder` seeks an optimal solution length within the time budget (**10 seconds**) for each test case. 
 And please be aware that total search time is influenced not only by the number of nodes expanded but also by the complexity of the heuristic function (the time required to compute it). 
@@ -176,7 +176,7 @@ And the node expansion number will directly impact your result, please inspect t
 
 
 
-You will experience first-hand the balance between 1) how informed you make your heuristic (it should expand less nodes in general), and 2) the overall runtime. As you can see, sometimes it may be preferable to have a cheaper less informed heuristic, even if you end up expanding more nodes.
+You will experience first-hand the balance between 1) how informed you make your heuristic (it should expand less nodes in general), and 2) the overall runtime. As you can see, sometimes it may be preferable to have a cheaper, less informed heuristic, even if you end up expanding more nodes.
 
 Other layouts are available in the [layouts](layouts/) directory, and you can easily create you own.  
 #### Part 2 (3 marks)
@@ -269,7 +269,7 @@ You can test your agent by running the local autograder:
 python autograder.py --test-directory=test_cases_assignment1 --q part3
 ```
 
-You can see the improvment in convergence by using the following command:
+You can see the improvement in convergence by using the following command:
 ```bash 
 python pacman.py -l tinyCorners -p SearchAgent -a fn=lrtak,prob=FoodSearchProblem,heuristic=nullHeuristic
 ```
@@ -281,7 +281,7 @@ python pacman.py -l tinyCorners -p SearchAgent -a fn=lrtak,prob=FoodSearchProble
 ### Self Evaluation Task (3 Marks)
 We highly recommend updating the self-evaluation as you complete each part, as you'll have fresh in your mind the learning lessons you acquired. Treat the self-evaluation as a [living document](https://en.wikipedia.org/wiki/Living_document). 
 
-At the end, it is recommended to look at all the learning journey you had across the assignment. Once you submit your final code, We will disclose the hidden tests used for automated feedback, so you can incorporate their analysis into your self-evaluation.  
+At the end, it is recommended that you look at the full learning journey you had across the assignment. Once you submit your final code, We will disclose the hidden tests used for automated feedback, so you can incorporate their analysis into your self-evaluation.  
 
 You need to assign your marks for part 1 (2 marks), part 2 (3 marks), and part 3 (2 marks) based on your code performance due to your programming, and learning experiences. Consider aspects such as coding lessons/challenges, heuristic properties, search algorithms subtleties, what would you have done if you were to have more time, etc.
 
@@ -293,8 +293,8 @@ Marks are given based on both your code performance and your self evaluation. We
  
 You must **follow good SE practices**, including good use of git during your development such as:
 
-* _Commit early, commit often:_ single or few commits with all the solution or big chucks of it, is not good practice.
-* _Use meaningful commit messages:_ as a comment in your code, the message should clearly summarise what the commit is about. Messages like "fix", "work", "commit", "changes" are poor and do not help us understand what was done.
+* _Commit early, commit often:_ it is not good practice to make a single commit with all of the solution nor is it good practice to make very few commits each with big chunks of it.
+* _Use meaningful commit messages:_ like comments in your code, the message should clearly summarise what the commit is about. Messages like "fix", "work", "commit", "changes" are poor and do not help us understand what was done.
 * _Use atomic commits:_ avoid commits doing many things; let alone one commit solving many questions of the project. Each commit should be about one (little but interesting) thing. 
 
 > [!CAUTION]
@@ -307,10 +307,10 @@ If you are new to [GIT, check out this 100 seconds video summary](https://www.yo
 <!-- **NOTE**: You should not change any files other than [search.py](search.py). You should not import any additional libraries into your code. This risks being incompatible with our running scripts. -->
 
 > [!NOTE]
-> From this repository, we will copy *only* the file: [search.py](search.py) when testing the autograder in the server via tagging. Please do not change any other file as part of your solution, or it will not run on our server. 
+> From this repository, we will copy *only* the file: [search.py](search.py) when testing using the autograder on the server, which will be selected via tagging. Please do not change any other file as part of your solution, or it will not run on our server.
 
 ### Local Autograder
-There is a **local autograder** provided to you to help you gain more insights. You may run the following command to test out your code for both tasks.
+There is a **local autograder** provided to you to help you gain more insights. You may run the following command to test out your code for all three tasks.
 ```
 python ./autograder.py --test-directory=test_cases_assignment1
 ```
@@ -359,7 +359,7 @@ This repository serves as base code for you to carry out your solution for [Proj
 2. Tag the commit that contains your final code with tag `submission`. 
     * The commit and tagging should be dated before the deadline.
     * Note that a tag is **NOT** a branch, so do not just create a branch called "submission" as that will not amount to tagging.
-    * Note that a tag is **NOT** a commit message, so please make sure you can find it in your repo page -> tags
+    * Note that a tag is **NOT** a commit message, so please make sure you can find it in your repo page -> tags.
     * It is **case-sensitive**.
 3. Complete the self-evaluation of your work and submit to [Canvas -> Assignments -> (Assignment1)](https://canvas.lms.unimelb.edu.au/courses/211178/assignments/548325). You can use [SELFEV.md](SELFEV.md) as a template or guide for your self evaluation.
 4. **Make sure you fill in the [submission certification form (PENDING)](https://forms.gle/PENDING)**.
@@ -399,11 +399,11 @@ Please view the following to learn how to *Tag* your commit version you want to 
 
 **Academic Dishonesty:** This is an advanced course, so we expect full professionalism and ethical conduct.  Plagiarism is a serious issue. Please **don't let us down and risk our trust**. The staff take academic misconduct very seriously. Sophisticated _plagiarism detection_ software (e.g., [Codequiry](https://codequiry.com/), [Turinitin](https://www.turnitin.com/), etc.) will be used to check your code against other submissions in the class as well as resources available on the web for logical redundancy. These systems are really smart, so just do not risk it and remain professional. We trust you all to submit your own work only; please don't let us down. If you do, we will pursue the strongest consequences available to us according to the **University Academic Integrity policy**. If you collaborate with other students, or use other materials, make sure to **acknowledge it in your self evaluation**. For more information on this see file [Academic Integrity](ACADEMIC_INTEGRITY.md).
 
-**We are here to help!:** We are here to help you! But we don't know you need help unless you tell us. We expect reasonable effort from you side, but if you get stuck or have doubts, please seek help. We will run labs to support these projects, so use them! You can always ask general questions about the techniques that are required to solve the projects. If in doubt whether a questions is appropriate, always feel free to post a Private post to the instructors on Ed.
+**We are here to help!:** We are here to help you! But we don't know you need help unless you tell us. We expect reasonable effort from your side, but if you get stuck or have doubts, please seek help. We will run labs to support these projects, so use them! You can always ask general questions about the techniques that are required to solve the projects. If in doubt whether a questions is appropriate, always feel free to post a Private post to the instructors on Ed.
 
 **Silence Policy:** A silence policy will take effect **48 hours** before this assignment is due. This means that no question about this assignment will be answered, whether it is asked on the discussion board, by email, or in person. Use the last 48 hours to wrap up and finish your project quietly as well as possible if you have not done so already. Remember it is not mandatory to complete the project by reaching a perfect state, try to cover as much as possible. By having some silence we reduce anxiety, last minute mistakes, and unreasonable expectations on others.
 
-Please remember to follow all the submission steps as per assignment specification.
+Please remember to follow all the submission steps as per the assignment specification.
 
 ## COMP90054 Code of Honour
 
@@ -412,12 +412,12 @@ We expect every UoM student taking this course to adhere to it **Code of Honour*
 * Submit their own original work (done individually or in their pair), or acknowledge the sources used.
 * Do not share solutions with others, but provide instead insights to help others learn.
 * Report suspected violations.
-* Do not Engage in any other activities that will dishonestly improve their results or dishonestly improve or damage the results of others.
+* Do not engage in any other activities that will dishonestly improve their results or dishonestly improve or damage the results of others.
 
 Unethical behaviour is extremely serious and consequences are painful for everyone. We expect enrolled students/learners to take full **ownership** of your work and **respect** the work of teachers and other students.
 
 
-**I hope you enjoy the assignment and learn from it**, and if you still **have doubts about the assignment and/or this specification** do not hesitate asking in the [ED discussion Forum](https://edstem.org/au/courses/22014/discussion/) and we will try to address it as quickly as we can!
+**I hope you enjoy the assignment and learn from it**, and if you still **have doubts about the assignment and/or this specification** do not hesitate to ask in the [ED discussion Forum](https://edstem.org/au/courses/22014/discussion/) and we will try to address it as quickly as we can!
 
 **GOOD LUCK and HAPPY PACMAN!**
 
