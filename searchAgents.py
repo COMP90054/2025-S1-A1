@@ -34,7 +34,7 @@ description for details.
 
 Good luck and happy searching!
 
-WARNING: This file is used for Berkeley Project (part 0 in our assignment), you should look and change code in search.py to
+WARNING: This file is only used for the original Berkeley Project (part 0 in our assignment), you should look and change code in search.py to
 finish other parts in our assignment.
 
 
