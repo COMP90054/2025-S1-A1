@@ -144,7 +144,7 @@ You should code your implementations *only* at the locations in the template cod
 This is a great way to test that you understand the submission instructions correctly, and how to get feedback from our hidden test-cases as many times as you want. Here are the steps:
 
 * Please tag your solution with `test-submission`. If you are not familiar with tags, please check out [tag hints](#git-hints-on-tags)
-* We are going to run your code on our server. You can check your result from this [link](https://comp90054-2025s1.github.io/) after a few minutes. This can test your code for part 1, part 2 and part 3.
+* We are going to run your code on our server. You can check your result from this [link](https://tinyurl.com/comp90054-2025s1) after a few minutes. This can test your code for part 1, part 2 and part 3.
 
 #### Part 1 (2 marks)
 
