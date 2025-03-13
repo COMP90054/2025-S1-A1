@@ -143,8 +143,9 @@ You should code your implementations *only* at the locations in the template cod
 
 This is a great way to test that you understand the submission instructions correctly, and how to get feedback from our hidden test-cases as many times as you want. Here are the steps:
 
-* Please tag your solution with `test-submission`. If you are not familiar with tags, please check out [tag hints](#git-hints-on-tags)
-* We are going to run your code on our server. You can check your result from this [link](https://tinyurl.com/comp90054-2025s1) after a few minutes. This can test your code for part 1, part 2 and part 3.
+1. Complete [this form](https://forms.gle/GnuRYXyTLqPGTgyH9) to register your GitHub account with your student ID.
+2. Please tag your solution with `test-submission`. If you are not familiar with tags, please check out [tag hints](#git-hints-on-tags)
+3. We are going to run your code on our server. You can check your result from this [webpage](https://tinyurl.com/comp90054-2025s1) after a few minutes. This can test your code for part 1, part 2 and part 3.
 
 #### Part 1 (2 marks)
 
@@ -367,11 +368,11 @@ This repository serves as base code for you to carry out your solution for [Proj
     * Note that a tag is **NOT** a commit message, so please make sure you can find it in your repo page -> tags.
     * It is **case-sensitive**.
 3. Complete the self-evaluation of your work and submit to [Canvas -> Assignments -> (Assignment1)](https://canvas.lms.unimelb.edu.au/courses/211178/assignments/548325). You can use [SELFEV.md](SELFEV.md) as a template or guide for your self evaluation.
-4. **Make sure you fill in the [submission certification form (PENDING)](https://forms.gle/PENDING)**.
+4. **Make sure you fill in the [submission certification form](https://forms.gle/YLHnh86ymhkqCwgJ6)**.
 <!-- 4. Fill the [Assignment 1 Certification Form](https://forms.gle/3W8ntjbW6Qq6NMvZA). -->
 
 
-> **Warning**
+> [!Warning]
 >Non-certified submissions will attract **zero** marks.
     
 
